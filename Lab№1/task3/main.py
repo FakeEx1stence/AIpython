@@ -8,5 +8,7 @@ for i in range (len(map)):
 
 if duple_row:
     print("Duplications:", *duple_row)
+    with open("result.txt", "w") as f:
+        f.write(str(duple_row) + "\n")
 else:
     print("None")
